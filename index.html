@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090512">
+<title>Festa Fantasia ✦ Convite</title>
+<style>
+:root{--bg:#090512;--panel:#140d23;--pink:#ff38c7;--cyan:#35f5ff;--lime:#c9ff3d;--text:#fff8ff;--muted:#c6b9d4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 12% 8%,#43115d 0,transparent 34%),radial-gradient(ellipse at 90% 40%,#102b54 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}
+.wrap{width:min(1100px,calc(100% - 36px));margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:14px}.brand{font-weight:900;letter-spacing:.12em;text-transform:uppercase}.brand span{color:var(--cyan)}.nav a{color:var(--muted);text-decoration:none;font-size:.92rem}.hero{min-height:74vh;display:grid;place-items:center;text-align:center;padding:60px 0 80px;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ff38c777;background:#ff38c714;color:#ffd5f5;padding:8px 14px;border-radius:99px;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime)}h1{font-size:clamp(3.6rem,12vw,8.8rem);line-height:.87;letter-spacing:-.075em;margin:26px 0 20px;font-weight:1000;text-transform:uppercase;text-shadow:0 0 18px #ff38c755,0 0 48px #35f5ff22}h1 span{display:block;color:var(--pink);-webkit-text-stroke:1px #ffb5ed;text-shadow:0 0 12px #ff38c7,0 0 42px #ff38c788}.subtitle{max-width:560px;margin:0 auto;color:var(--muted);font-size:clamp(1rem,2.5vw,1.2rem)}.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{border:0;border-radius:12px;padding:14px 20px;font-weight:850;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:transform .2s,box-shadow .2s;font-size:.96rem}.btn:hover{transform:translateY(-2px)}.primary{background:var(--pink);color:#19051a;box-shadow:0 0 24px #ff38c755}.secondary{border:1px solid #35f5ff88;color:var(--cyan);background:#35f5ff0d}.orb{position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none}.orb.one{width:100px;height:100px;left:4%;top:23%;border:1px solid #35f5ff99;box-shadow:inset 0 0 30px #35f5ff33,0 0 35px #35f5ff22}.orb.two{width:54px;height:54px;right:8%;top:24%;background:#ff38c722;border:1px solid #ff38c7;box-shadow:0 0 28px #ff38c766}.section{padding:38px 0 76px}.section-head{text-align:center;margin-bottom:28px}.kicker{color:var(--cyan);text-transform:uppercase;letter-spacing:.2em;font-size:.76rem;font-weight:800}.section h2{font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.04em;margin:8px 0}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{border:1px solid #ffffff18;background:linear-gradient(145deg,#ffffff0b,#ffffff03);border-radius:20px;padding:24px;box-shadow:0 16px 50px #0002;backdrop-filter:blur(8px)}.icon{font-size:1.7rem;margin-bottom:12px}.card h3{margin:0 0 8px;font-size:1.08rem}.card p{margin:0;color:var(--muted);font-size:.94rem}.form-layout{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.form-card{border:1px solid #ff38c755;background:linear-gradient(145deg,#24102f,#100b1d);border-radius:22px;padding:clamp(22px,4vw,34px)}label{display:block;font-size:.9rem;color:#eadff2;margin:16px 0 7px}input,select,textarea{width:100%;padding:13px 14px;border:1px solid #ffffff25;border-radius:10px;background:#08050f;color:#fff;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #35f5ff1c}.map-placeholder{min-height:250px;border-radius:18px;border:1px solid #35f5ff55;background:radial-gradient(circle at 50% 45%,#35f5ff17,transparent 40%),linear-gradient(135deg,#11182c,#180d25);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:26px}.map-placeholder .pin{font-size:2.7rem;filter:drop-shadow(0 0 12px #ff38c7)}.note{font-size:.8rem;color:#a99bb8;margin-top:12px}.status{min-height:24px;color:var(--lime);margin-top:12px;font-weight:700}.footer{border-top:1px solid #ffffff16;text-align:center;padding:28px 0 40px;color:#a99bb8;font-size:.84rem}.footer strong{color:var(--pink)}.edit-hint{font-size:.82rem;color:#c6b9d4;margin-top:10px}.pill{display:inline-block;border:1px solid #c9ff3d66;border-radius:99px;padding:5px 10px;color:var(--lime);font-size:.76rem;margin-top:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.form-layout{grid-template-columns:1fr}.hero{min-height:67vh;padding:45px 0 62px}.orb.one{width:60px;height:60px;left:-12px;top:14%}.orb.two{right:0;top:14%;width:38px;height:38px}.nav a{font-size:.82rem}.nav{align-items:flex-start}.brand{font-size:.9rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="wrap nav"><div class="brand">✦ <span>Festa</span> Fantasia</div><a href="#confirmar">CONFIRMAR PRESENÇA ↗</a></header>
+<main>
+<section class="hero wrap">
+<div class="orb one"></div><div class="orb two"></div>
+<div>
+<div class="eyebrow">Você está na lista?</div>
+<h1>Festa <span>Fantasia</span></h1>
+<p class="subtitle">Uma noite, mil personagens e energia lá em cima. Escolha sua fantasia e venha brilhar com a gente! ✨</p><p style="margin:18px 0 0;color:#c9ff3d;font-weight:850;letter-spacing:.04em">📅 30 DE OUTUBRO DE 2026 &nbsp; ✦ &nbsp; 🕔 17H ÀS 22H</p>
+<div class="actions"><a class="btn primary" href="#confirmar">🎟️ Quero ir!</a><a class="btn secondary" href="#local">📍 Ver local</a></div>
+<div class="pill">DRESS CODE: SUA FANTASIA MAIS CRIATIVA</div>
+</div></section>
+<section class="section wrap">
+<div class="section-head"><div class="kicker">Prepare o look</div><h2>A noite vai ser lendária.</h2><p class="muted">Chame a galera, capriche na fantasia e venha fazer história.</p></div>
+<div class="grid">
+<article class="card"><div class="icon">🦸</div><h3>Fantasia liberada</h3><p>Herói, vilão, personagem ou uma ideia totalmente sua. Solte a criatividade!</p></article>
+<article class="card"><div class="icon">🫶</div><h3>Só a nossa galera</h3><p>Uma festa para curtir com os amigos. Confirme sua presença aqui embaixo.</p></article>
+</div>
+</section>
+<section class="section wrap" id="confirmar">
+<div class="section-head"><div class="kicker">Não fica de fora</div><h2>Confirme sua presença</h2><p class="muted">Preencha seus dados para deixar sua resposta pronta.</p></div>
+<div class="form-layout">
+<div class="form-card"><form id="rsvp">
+<label for="nome">Seu nome</label><input id="nome" name="nome" placeholder="Como podemos te chamar?" required maxlength="80">
+<label for="resposta">Você vai colar?</label><select id="resposta" name="resposta" required><option value="">Selecione uma opção</option><option>Sim! Tô dentro 🎉</option><option>Ainda não sei 🤔</option><option>Não vou conseguir 😢</option></select>
+<label for="comida">Qual comida ou bebida você vai levar? (obrigatório)</label><select id="comida" name="comida" required><option value="">Escolha o que vai levar</option><option>Salgadinhos</option><option>Pizza</option><option>Sanduíches</option><option>Doces</option><option>Bolo</option><option>Batata frita ou snacks</option><option>Refrigerante</option><option>Suco</option><option>Água</option><option>Outra comida ou bebida</option></select>
+<label for="fantasia">Ideia de fantasia (opcional)</label><input id="fantasia" name="fantasia" placeholder="Ex.: personagem de filme" maxlength="100">
+<button class="btn primary" type="submit" style="width:100%;margin-top:20px">Confirmar resposta ✨</button>
+<p class="status" id="status" role="status" aria-live="polite"></p>
+<p class="note">Este modelo demonstra a confirmação no navegador. Para receber respostas de verdade, conecte o formulário a um serviço ou planilha antes de divulgar.</p>
+</form></div>
+<div class="form-card" id="local"><div class="kicker">Onde vai rolar?</div><h2 style="font-size:1.8rem">Nos vemos lá!</h2><p class="muted">Adicione o endereço da festa para os convidados abrirem no mapa.</p>
+<label for="endereco">Endereço da festa</label><input id="endereco" value="Rua senhora do Porto, 77, Vila Barros" placeholder="Rua, número, bairro e cidade">
+<label for="data">Data e horário</label><input id="data" value="30/10/2026, das 17h às 22h" placeholder="Ex.: 31/10, às 20h">
+<div class="actions" style="justify-content:flex-start"><button class="btn secondary" type="button" id="mapBtn">📍 Abrir no Google Maps</button></div>
+<p class="note">O endereço não vem preenchido: insira o local correto antes de compartilhar o convite.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer"><div class="wrap">Feito com brilho para a <strong>Festa Fantasia</strong> ✦</div></footer>
+<script>
+document.getElementById('rsvp').addEventListener('submit',function(e){
+ e.preventDefault();
+ const nome=document.getElementById('nome').value.trim();
+ const resposta=document.getElementById('resposta').value;
+ const comida=document.getElementById('comida').value;
+ const fantasia=document.getElementById('fantasia').value.trim();
+ const msg=`Confirmação — Festa Fantasia%0ANome: ${nome}%0APresença: ${resposta}%0AComida/bebida: ${comida}${fantasia?'%0AFantasia: '+fantasia:''}`;
+ const whatsappNumber=''; // Opcional: informe o número com código do país, somente dígitos (ex.: 5511999999999).
+ if(whatsappNumber){
+   window.open('https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(msg.replaceAll('%0A','\\n')),'_blank','noopener,noreferrer');
+   document.getElementById('status').textContent='Abrindo o WhatsApp para enviar sua confirmação.';
+ } else {
+   document.getElementById('status').textContent=`Resposta preparada: ${nome} — ${resposta} | Vai levar: ${comida}${fantasia?' | Fantasia: '+fantasia:''}. Atenção: esta demonstração não envia nem armazena a resposta.`;
+ }
+});
+document.getElementById('mapBtn').addEventListener('click',function(){
+ const address=document.getElementById('endereco').value.trim();
+ if(!address){document.getElementById('endereco').focus();document.getElementById('endereco').placeholder='Digite o endereço primeiro';return;}
+ window.open('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(address),'_blank','noopener,noreferrer');
+});
+</script>
+</body>
+</html>
