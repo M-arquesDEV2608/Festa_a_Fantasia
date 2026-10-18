@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#160b2b">
+<title>Festa Fantasia ✨</title>
+<style>
+:root{--bg:#10091f;--panel:#1d1233;--pink:#ff4fc8;--cyan:#57f4ff;--purple:#a78bfa;--text:#fff8ff;--muted:#d0c4e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);background:radial-gradient(ellipse at 15% 10%,#4b1769 0,transparent 34%),radial-gradient(ellipse at 85% 25%,#103f5a 0,transparent 32%),var(--bg);min-height:100vh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(#fff 0.7px,transparent .8px);background-size:43px 43px;opacity:.13}
+main{position:relative;width:min(960px,92%);margin:auto;padding:32px 0 48px}
+.hero{text-align:center;padding:36px 22px 28px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #ffffff2c;background:#ffffff0b;border-radius:999px;padding:8px 14px;color:var(--cyan);font-size:.83rem;letter-spacing:.1em;text-transform:uppercase}
+h1{font-size:clamp(2.6rem,8vw,5.8rem);line-height:.98;margin:22px 0 15px;letter-spacing:-.055em;text-shadow:0 0 24px #ff4fc866}
+h1 span{background:linear-gradient(100deg,var(--pink),#ffc5f1,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.subtitle{max-width:620px;margin:0 auto;color:var(--muted);font-size:1.08rem;line-height:1.7}
+.event-pills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:24px}
+.pill{border:1px solid #ffffff20;background:#ffffff0c;border-radius:14px;padding:12px 16px;font-weight:650}
+.panel{background:linear-gradient(145deg,#24163bdc,#17102beF);border:1px solid #ffffff1a;border-radius:24px;padding:clamp(20px,4vw,34px);box-shadow:0 20px 65px #0003;backdrop-filter:blur(12px);margin-top:20px}
+.section-title{font-size:1.45rem;margin:0 0 8px}.muted{color:var(--muted);line-height:1.6;margin:0 0 22px}
+.actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.action{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;text-decoration:none;color:var(--text);padding:22px 12px;border-radius:18px;border:1px solid #ffffff1e;background:#ffffff08;transition:transform .2s,border-color .2s,background .2s;cursor:pointer}
+.action:hover{transform:translateY(-4px);border-color:var(--cyan);background:#57f4ff0d}
+.icon{width:58px;height:58px;border-radius:19px;display:grid;place-items:center;background:linear-gradient(135deg,#ff4fc82b,#57f4ff20);border:1px solid #ffffff1a;color:var(--pink)}
+.icon svg{width:29px;height:29px;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.action strong{font-size:1rem}.action small{color:var(--muted);line-height:1.4}
+form{display:grid;gap:17px}.field{display:grid;gap:8px}label{font-weight:650;font-size:.94rem}
+input,select{width:100%;border:1px solid #ffffff25;background:#10091f;color:var(--text);border-radius:12px;padding:14px 13px;font:inherit;outline:none}
+input:focus,select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #57f4ff20}select option{background:#1d1233}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.btn{border:0;border-radius:13px;padding:15px 18px;font:inherit;font-weight:800;cursor:pointer;color:#180b24;background:linear-gradient(100deg,var(--pink),#ffc0ef);box-shadow:0 8px 24px #ff4fc82b;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn.secondary{background:linear-gradient(100deg,var(--cyan),#b4fbff)}
+.note{font-size:.84rem;color:var(--muted);line-height:1.5}
+.location{display:flex;gap:14px;align-items:flex-start}.location .icon{flex:0 0 58px}
+footer{text-align:center;color:#b7a8d0;font-size:.85rem;padding:28px 0 0}
+@media(max-width:650px){main{width:min(100% - 26px,560px);padding-top:14px}.hero{padding:30px 6px 20px}.actions{grid-template-columns:1fr}.action{flex-direction:row;text-align:left;padding:15px;gap:14px}.action .icon{flex:0 0 52px;width:52px;height:52px}.action small{display:block}.form-grid{grid-template-columns:1fr}.panel{border-radius:20px}}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">✦ Uma noite para lembrar ✦</div>
+    <h1>Festa <span>Fantasia</span></h1>
+    <p class="subtitle">Vista sua criatividade, escolha sua fantasia e venha curtir uma noite incrível com a gente! Sua presença vai deixar a festa ainda mais especial. ✨</p>
+    <div class="event-pills">
+      <div class="pill">📅 Sexta, 30 de outubro</div>
+      <div class="pill">🕙 Das 17h às 22h</div>
+    </div>
+  </header>
+
+  <section class="panel">
+    <h2 class="section-title">Entre no clima da festa</h2>
+    <p class="muted">Clique nos ícones para confirmar sua presença ou avisar o que vai levar. Cada opção abre uma conversa no WhatsApp.</p>
+    <div class="actions">
+      <a class="action" id="presenceLink" href="#" target="_blank" rel="noopener">
+        <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 11.5a7.5 7.5 0 0 1-11.2 6.5L4 19l1.1-4.2A7.5 7.5 0 1 1 20 11.5Z"/><path d="M9 9.2c.4 1.7 1.6 2.9 3.3 3.4"/></svg></span>
+        <span><strong>Confirmar presença</strong><br><small>Avise que você vai!</small></span>
+      </a>
+      <a class="action" href="#comida">
+        <span class="icon"><svg viewBox="0 0 24 24"><path d="M4 3v7a3 3 0 0 0 6 0V3M7 3v18M17 3v18M17 3c-3 3-3 8 0 10"/></svg></span>
+        <span><strong>Comida / bebida</strong><br><small>Escolha o que vai levar</small></span>
+      </a>
+      <a class="action" href="#fantasia">
+        <span class="icon"><svg viewBox="0 0 24 24"><path d="M12 3 14 8l5 2-5 2-2 5-2-5-5-2 5-2 2-5Z"/><path d="m19 15 1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2Z"/></svg></span>
+        <span><strong>Minha fantasia</strong><br><small>Opcional — conte sua ideia</small></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">🍕 O que você vai levar?</h2>
+    <p class="muted">Escolha uma opção obrigatória e envie pelo WhatsApp.</p>
+    <form id="foodForm">
+      <div class="field">
+        <label for="food">Comida ou bebida <span style="color:var(--pink)">*</span></label>
+        <select id="food" required>
+          <option value="">Selecione uma opção</option>
+          <option>Pizza</option><option>Sanduíches</option><option>Bolo e doces</option><option>Salgadinhos</option><option>Batata frita / snacks</option><option>Refrigerante, suco ou água</option><option>Outra comida ou bebida</option>
+        </select>
+      </div>
+      <button class="btn secondary" type="submit">Enviar minha escolha pelo WhatsApp ↗</button>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">🪄 Qual será sua fantasia?</h2>
+    <p class="muted">Esse campo é opcional. Se quiser, conte qual fantasia vai usar.</p>
+    <form id="costumeForm">
+      <div class="field">
+        <label for="costume">Fantasia (opcional)</label>
+        <input id="costume" type="text" placeholder="Ex.: bruxa, vampiro, personagem...">
+      </div>
+      <button class="btn" type="submit">Enviar fantasia pelo WhatsApp ↗</button>
+    </form>
+  </section>
+
+  <section class="panel">
+    <h2 class="section-title">📍 Onde vai ser?</h2>
+    <div class="location">
+      <span class="icon"><svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+      <div><strong>Rua Senhora do Porto, 77</strong><p class="muted" style="margin:5px 0 15px">Vila Barros</p>
+      <a class="btn" style="display:inline-block;text-decoration:none" href="https://www.google.com/maps/search/?api=1&query=Rua+Senhora+do+Porto%2C+77%2C+Vila+Barros" target="_blank" rel="noopener">Abrir no Google Maps ↗</a></div>
+    </div>
+  </section>
+  <footer>✨ Festa Fantasia · Sexta-feira, 30/10/2026 · 17h às 22h ✨</footer>
+</main>
+<script>
+const phone = "5511966288338";
+function sendWhatsApp(message){window.open("https://wa.me/"+phone+"?text="+encodeURIComponent(message),"_blank","noopener");}
+document.getElementById("presenceLink").href="https://wa.me/"+phone+"?text="+encodeURIComponent("Confirmo minha Presença Para a Festa");
+document.getElementById("foodForm").addEventListener("submit",function(e){
+ e.preventDefault(); const food=document.getElementById("food").value;
+ if(!food){document.getElementById("food").focus();return;}
+ sendWhatsApp("A Comida/ Bebida que eu vou levar é... "+food);
+});
+document.getElementById("costumeForm").addEventListener("submit",function(e){
+ e.preventDefault(); const costume=document.getElementById("costume").value.trim();
+ sendWhatsApp("A Fantasia que eu vou é..."+(costume ? " "+costume : ""));
+});
+</script>
+</body>
+</html>
